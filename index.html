@@ -19,10 +19,10 @@
         Tutorial
       </li>
       <li class="header-menu_item">
-        <a href="cheatsheet.html">Cheatsheet</a>
+        <a href="cheatsheet.html">Spickzettel</a>
       </li>
       <li class="header-menu_item">
-        <a href="resources.html">Resources</a>
+        <a href="resources.html">Quellen</a>
       </li>
       <li class="header-menu_item">
         <a
@@ -36,59 +36,96 @@
     <div id="side-bar">
       <div class="instructions">
         <div class="step step1" data-id="1">
-          <h3><span class="instructions-step">1/13</span> Introduction</h3>
+          <h3><span class="instructions-step">1/13</span> Einführung</h3>
 
           <div class="instructions-message">
             <h5>
               <span class="octicon octicon-info"></span>
-              Instructions
+              Einführung
             </h5>
 
             <p>
+	      <!--
               Every step in the tutorial starts with a text. At the end of the
-              text is a button that starts the execution of a git command.
+              text is a button that starts the execution of a git command.-->
+	      
+	      Jeder Schritt in dieser Einführung startet mit einem
+              kurzen Text. Am Ende befindet sich ein Button, mit dem
+              ein
             </p>
             <p>
-              After clicking the button 4 things will happen, in the following order:
+              <!--After clicking the button 4 things will happen, in the following order:-->
+
+	      Nach einem Klick passieren immer 4 Dinge:
             </p>
-            <ul>
-              <li>In the console (at the bottom left): The command will be added and executed.</li>
-              <li>On the right: An animation will show what the command does.</li>
-              <li>When the animation ends, the console shows the output of the command.</li>
-              <li>At the right of the button will appear a link to go to the next step.</li>
-            </ul>
+            <ol>
+              <li><!--In the console (at the bottom left): The command
+		      will be added and executed.-->
+		
+		Der Befehl wird unten links in der Konsole ausgeführt.</li>
+	      
+              <li><!--On the right: An animation will show what the
+		      command does.-->
+
+		Auf der Seite wird angezeigt, was der
+		Befehl macht.</li>
+	      
+              <li><!--When the animation ends, the console shows the
+		      output of the command.-->
+
+		Nach Beendigung der Animation
+		zeigt wird die Ausgabe des Befehls angezeigt. </li>
+	      
+              <li><!--At the right of the button will appear a link to
+		      go to the next step.-->
+
+		Rechts neben dem Button erscheint
+		ein link, der zum nächsten Schritt führt.</li>
+	      
+            </ol>
           </div>
 
           <p>
-            The official definition of git is "a distributed version control system".
-            But what does it mean? Let's use an example to explain it.
+            <!--The official definition of git is "a distributed version control system".
+		But what does it mean? Let's use an example to explain it.-->
+
+	    Die offizielle Beschreibung ist "ein verteiltes
+	    Versionskontrollsystem". Aber was heißt das genau? Wir
+	    wollen es an einem Beispiel verstehen.
           </p>
           <p>
-            In the next table we have some changes we did to a file:
+            <!--In the next table we have some changes we did to a file:-->
+
+	    In der folgenden Tabelle sehen wir Änderungen, die wir an
+	    einer Datei vorgenommen haben.
           </p>
 
           <table>
             <thead>
               <tr>
-                <th>Time</th>
+                <th>Zeit</th>
                 <th>Status</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>July 7, 10:00</td>
-                <td>Create file <span class="instructions-term">tasks.txt</span>.</td>
+                <td>7. Juli, 10:00</td>
+                <td>Datei <span class="instructions-term">tasks.txt</span> erstellt.</td>
               </tr>
               <tr>
-                <td>July 7, 10:05</td>
+                <td>7. Juli, 10:05</td>
                 <td>
-                  Add paragraph to file <span class="instructions-term">tasks.txt</span>.
+                  Absatz in der
+                  Datei <span class="instructions-term">tasks.txt</span>
+                  hinzugefügt.
                 </td>
               </tr>
               <tr>
-                <td>July 7, 10:10</td>
+                <td>7. Juli, 10:10</td>
                 <td>
-                  Format the content of <span class="instructions-term">tasks.txt</span>.
+                  Den Inhalt der
+                  Datei <span class="instructions-term">tasks.txt</span>
+                  formatiert.
                 </td>
               </tr>
               <tr>
@@ -99,24 +136,43 @@
           </table>
 
           <p>
-            We can think of every row in the table as a version of the file.
+            <!--We can think of every row in the table as a version of the file.
             So git is a system that helps us track version or changes of files
             through time (it is also distributed, but that's a feature for another
-            tutorial).
+            tutorial).-->
+
+	    Wir können uns jede Zeile der Tabelle als eine Version der
+	    Datei vorstellen. Git hilft uns dabei, Veränderungen oder
+	    Versionen einer Datei nachzuverfolgen. Es macht dies
+	    "verteilt" - aber das ist etwas für ein andere Tutorial.
           </p>
 
           <h4>Git basics</h4>
           <p>
+	    <!--
             To initialize git inside a folder, we use the command
             <span class="instructions-term">git init</span>. After executing this
-            command, git will start tracking changes inside the folder.
+            command, git will start tracking changes inside the folder.-->
+
+	    Um ein Verzeichnis mit git zu initialisieren benutzen wir
+	    den Befehl <span class="instructions-term">git
+	    init</span>. Sobald der Befehl ausgeführt wurde, können
+	    mit git Änderungen im Verzeichnis nachverfolgt werden.
           </p>
           <p>
+	    <!--
             Internally git have three states (also called areas) where changes
-            can be in: working directory, staging area, and repository.
+            can be in: working directory, staging area, and repository.-->
+
+	    Intern unterscheidet git drei Zustände oder Bereiche, in
+	    denen Änderungen vollzogen werden können (auch als "areas"
+	    bezeichnet): <i>working directory</i>, <i>staging area</i> und
+	    <i>repository</i>.
           </p>
           <p>
-            Click the next button to start the animation.
+            <!--Click the next button to start the animation.-->
+
+	    Klicke auf den Button, um die Animation zu starten.
           </p>
 
           <a class="command-trigger">
